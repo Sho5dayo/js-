@@ -1,0 +1,55 @@
+html{
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+
+
+button{
+    border: 1px solid #ccc;
+    background: #f1e767;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fdfbfb), to(#ebedee));
+    background: -webkit-linear-gradient(top, #fdfbfb 0%, #ebedee 100%);
+    background: linear-gradient(to bottom, #fdfbfb 0%, #ebedee 100%);
+    -webkit-box-shadow: inset 1px 1px 1px #fff;
+    box-shadow: inset 1px 1px 1px #fff;
+    cursor: pointer;
+}
+
+button:hover{
+    background: -webkit-gradient(linear, left bottom, left top, from(#fdfbfb), to(#ebedee));
+    background: -webkit-linear-gradient(bottom, #fdfbfb 0%, #ebedee 100%);
+    background: linear-gradient(to top, #fdfbfb 0%, #ebedee 100%);
+}
+
+#sign{
+    float: right;
+    padding: 15px 10px;
+    width: max-content;
+    display: grid;
+}
+
+#signup{
+    margin-bottom: 10px;
+    height: 50px;
+}
+
+#logo{
+    font-size: 60px;
+    text-align: left;
+    margin-left: 10rem;
+}
+
+#kakoi{
+    margin-top: 13%;
+}
+
+
+
+
+
+#service, #goal{
+    padding-top: none;
+    text-align: center;
+}

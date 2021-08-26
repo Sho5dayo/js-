@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/sns.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="logo">BUKATU</div>
+    <div id="sign">
+    <button id="signup">新規登録はこちら！</button>
+    <form>
+        <input type="text" id="loginid" name="yourname" placeholder="Login id">
+        <input type="password" id="password" name="password" placeholder="Password">
+    </form>    
+    <button id = "login">Login</button>
+    </div>
+    <div id = "kakoi" style="background-color: azure;">
+        
+          
+        <section id = "service">
+            <h2>サービス概要</h2>
+            <p id="service_contents">
+                参加チームの間で試合結果や今後の予定を発信<br>
+                スコアなどの個人成績を管理し、チームの課題や強味をデータで管理する<br>
+                チームのデータは公開・非公開の選択が可能<br>
+                チーム内の連絡事項などを投稿できる掲示板機能<br>
+                練習試合の申し込みがサービス上からできるようにしたい<br>
+            </p>
+        </section>
+
+        <section id="goal">
+            <h2>サービスの目的</h2>
+            <p>日本スポーツシーンの高校生までのカテゴリーのレベル底上げ
+            <br>短い学生生活の中で多くの時間をかけている部活動をより生産性のある時間にしてもらいたい</p>
+
+        </section>
+        
+
+    </div>
+
+
+
+
+
+<script>
+
+$("#login").on("click", function(){
+    window.location.href="user.html"
+});    
+        
+    
+$("#signup").on("click", function(){
+    window.location.href="signup.html"
+});  
+    
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

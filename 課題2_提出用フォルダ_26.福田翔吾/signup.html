@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signuppage</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/sns.css">
+
+</head>
+<body>
+    <div id="kakoi" style ="text-align: center; width: 90%; background-color: azure;">
+    <h1>ユーザー登録</h1>
+    <div id="userinfo">
+        <h2>学校名</h2>
+        <p><label>
+                <input type="text" id="school" value="" required>
+            </label><br>
+            <h2>ニックネーム</h2>
+        <p><label>
+                <input type="text" id="yourid" value="" required>
+            </label><br>
+        </p>
+        <h2>学年</h2>
+        <p><select id="year"　 required>
+            <option value="none">選択してください</option>
+            <option value="junior1">中学校1年生</option>
+            <option value="junior2">中学校2年生</option>
+            <option value="junior3">中学校3年生</option>
+            <option value="senior1">高校1年生</option>
+            <option value="senior2">高校2年生</option>
+            <option value="senior3">高校3年生</option>
+        </select>
+            
+        </p>
+        <h2>性別</h2>
+        <p><select id="sex">
+            <option value="none">選択してください</option>
+            <option value="male">男性</option>
+            <option value="female">女性</option>
+            </select>
+        </p>
+        <h2>部活動</h2>
+        <p><select id="sport">
+            <option value="none">選択してください</option>
+            <option value="soccer">サッカー</option>
+            <option value="basketball"><audio id="victory" src="sound/suradan.mp3"></audio>バスケットボール</option>
+            <option value="baseball">野球</option>
+            <option value="valleyball">バレーボール</option>
+            <option value="tennis">テニス</option>
+            </select>
+        </p>
+
+    </div>
+
+    <button id="submit" >登録</button>
+</div>
+
+<script>
+
+
+
+    $("#submit").on("click", function () {
+        const text ={
+            school:$("#school").val(),
+            yourid:$("#yourid").val()
+        };
+        console.log(text)
+        
+        const selected={
+            year:$("#year").val(),
+            sex:$("#sex").val(),
+            sport:$("#sport").val(),
+        }
+        console.log(selected)
+
+        localStorage.setItem(JSON.stringify(text),JSON.stringify(selected));
+    });
+
+ 
+
+  
+
+
+
+    
+
+</script>
+
+</body>
+</html>
